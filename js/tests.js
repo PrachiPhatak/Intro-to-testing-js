@@ -39,7 +39,7 @@ describe('sayHello', function () {
     it('should return "Hello, World! when passed undefined',  () => {
         expect(sayHello(undefined)).toBe("Hello, World!");
     });
-    // it('should return "Hello, World" when passed object', function (object) {
-    //     expect(sayHello(object)).toBe("Hello, World!")
-    // });
+    it('should return "Hello, World" when passed object', () => {
+        expect(sayHello([])).toBe("Hello, World!")
+    });
 });
