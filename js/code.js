@@ -4,6 +4,9 @@ let helloWorld = function() {
 }
 
 let sayHello = function (name) {
+    if( typeof name !== "string" || name === ''){
+        return "Hello, World!"
+    }
     if(name === "CodeUp"){
         return "Hello, CodeUp Students!"
     }
