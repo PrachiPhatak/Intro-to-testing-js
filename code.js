@@ -3,6 +3,9 @@ let helloWorld = function() {
     return "Hello, World!";
 }
 
-let sayHello = function () {
-    return "";
+let sayHello = function (name) {
+    if(name === "CodeUp"){
+        return "Hello, CodeUp Students!"
+    }
+    return "Hello, " + name +"!";
 }
