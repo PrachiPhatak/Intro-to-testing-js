@@ -43,3 +43,36 @@ describe('sayHello', function () {
         expect(sayHello([])).toBe("Hello, World!")
     });
 });
+
+describe('isFive',function (){
+    it('should be defined as a function', () => {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return boolean when called.', () => {
+        expect(typeof isFive()).toBe('boolean')
+    });
+    it('should return true when passed 5', () => {
+        expect(isFive(5)).toBe(true)
+    });
+    it('should return false when passed 6',  () => {
+        expect(isFive(6)).toBe(false);
+    });
+    it('should return false when passed -10', () => {
+       expect(isFive(-10)).toBe(false); 
+    });
+    it('should return false when passed null',  () => {
+        expect(isFive(null)).toBe(false);
+    });
+    it('should return false when passed \'\'',  () => {
+        expect(isFive('')).toBe(false);
+    });
+    it('should return true when passed \'5\'',  () => {
+        expect(isFive('5')).toBe(true);
+    });
+    it('should return false when passed when passed \'5prachi\'', () => {
+        expect(isFive('5prachi')).toBe(false);
+    });
+    it('should return false when passed "string" ',  () => {
+        expect(isFive("string")).toBe(false);
+    });
+});

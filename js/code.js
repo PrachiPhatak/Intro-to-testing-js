@@ -1,9 +1,9 @@
 // function expression syntax (assigning an anonymous function to a variable)
-let helloWorld = function() {
+function helloWorld() {
     return "Hello, World!";
 }
 
-let sayHello = function (name) {
+function sayHello(name) {
     if( typeof name !== "string" || name === ''){
         return "Hello, World!"
     }
@@ -11,4 +11,8 @@ let sayHello = function (name) {
         return "Hello, CodeUp Students!"
     }
     return "Hello, " + name +"!";
+}
+
+function isFive(num){
+    return (isNaN(num)===false && parseFloat(num) === 5);
 }
