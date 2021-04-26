@@ -14,5 +14,20 @@ function sayHello(name) {
 }
 
 function isFive(num){
-    return (isNaN(num)===false && parseFloat(num) === 5);
+    return (isNaN(num) === false && parseFloat(num) === 5);
 }
+
+function isEven(num){
+    return (typeof num === 'number' && num % 2 === 0);
+}
+
+function isVowel(char){
+    //console.log( ["a", "e", "i", "o", "u"].includes(char.toLowerCase()))
+    if(typeof char === 'string') {
+
+        return ["a", "e", "i", "o", "u"].includes(char.toLowerCase())
+    }
+    else
+        return false;
+}
+//isVowel("a")
