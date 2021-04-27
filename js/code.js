@@ -22,12 +22,15 @@ function isEven(num){
 }
 
 function isVowel(char){
-    //console.log( ["a", "e", "i", "o", "u"].includes(char.toLowerCase()))
     if(typeof char === 'string') {
-
         return ["a", "e", "i", "o", "u"].includes(char.toLowerCase())
     }
     else
         return false;
 }
-//isVowel("a")
+function add(num1, num2){
+    if(Number.isNaN(num1) || Number.isNaN(num2)){
+        return NaN;
+    }
+    return parseInt(num1) + parseInt(num2);
+}
